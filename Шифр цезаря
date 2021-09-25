@@ -1,0 +1,23 @@
+letters_ua = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЄЮЯАБВГДЕЄЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЮЯ'
+letters_us = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUWXYZ'
+type_encryption = int(input('Type of encryption: '))
+lang = input("Choose your language us or ua: ")
+message = input("Word for encryption: ").upper()
+result = ''
+if lang == "ua":
+    for i in message:
+        place = letters_ua.find(i)
+        new_place = place + type_encryption
+        if i in letters_ua:
+            result += letters_ua[new_place]
+        else:
+            result += i
+else:
+    for i in message:
+        place = letters_us.find(i)
+        new_place = place + type_encryption
+        if i in letters_us:
+            result += letters_us[new_place]
+        else:
+            result += i
+print(result)
