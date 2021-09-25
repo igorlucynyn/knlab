@@ -1,4 +1,4 @@
-letters_ua = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЄЮЯАБВГДЕЄЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЮЯ'
+letters_ua = 'АБВГДЕЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЄЮЯАБВГДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ'
 letters_us = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUWXYZ'
 type_encryption = int(input('Type of encryption: '))
 lang = input("Choose your language us or ua: ")
