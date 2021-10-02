@@ -1,0 +1,12 @@
+if __name__ == "__main__":
+    string = input(str('Введіть речення'))
+    s_string = set(string)
+    summ = []
+    for s_symbol in s_string:
+        count = 0
+        for symbol in string:
+            if s_symbol == symbol:
+                count += 1
+        summ.append([s_symbol, count])
+    for item in summ:
+        print(item)
